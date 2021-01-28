@@ -1,6 +1,6 @@
 
 // const url = "http://localhost:3000";
-const url='https://owais-real-time-twitter.herokuapp.com/';
+const url='https://twitter-app-5.herokuapp.com';
 // const { default: axios } = require("axios");
 var socket = io(url);
 

@@ -2,10 +2,10 @@ var express = require('express')
 var bcrypt = require("bcrypt-inzi")
 var jwt = require('jsonwebtoken');
 var postmark = require("postmark");
-// var emailApi = "123";
+var emailApi = process.env.API_TOKEN;
 
-// var client = new postmark.ServerClient(emailApi);
-var client = new postmark.ServerClient("2d3dc149-a068-4363-9ba4-7e7bfe25f7af");
+var client = new postmark.ServerClient(emailApi);
+// var client = new postmark.ServerClient("");
 var {
     otpModel,
     userModel,
